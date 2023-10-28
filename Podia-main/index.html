@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              violet: "#4b2aad",
+              darkViolet: "#201445",
+              purple: "#9484c6",
+              gray: "#5c5856",
+              lightGray: "#9c8881",
+              paleWhite: "#fdfbf9",
+              footerGray: "#f5efeb",
+            },
+
+            fontFamily: {
+              eb: ["EB Garamond", "serif"],
+              inter: ["Inter", "sansserif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/normalized.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style/customized.css" />
+  </head>
+  <body class="bg-paleWhite relative">
+    <div class="w-full max-w-[70rem] px-[2rem] m-auto h-[300px]">
+ 
+      <header class="bg-white w-full fixed top-0 left-0 shadow-md z-10">
+        <nav class="w-full max-w-[70rem] m-auto text-[16px]">
+          <div class="mx-2 px-8 flex justify-between items-center">
+            <div class="py-4 text-gray font-inter">
+              <ul class="flex gap-5 items-center">
+                <li><img src="assets/podia-logo.svg" class="w-[4rem]" /></li>
+                <li class="flex gap-1 items-center">
+                  Features<i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>Examples</li>
+                <li>Pricing</li>
+                <li>Demo</li>
+                <li class="flex gap-1 items-center">
+                  Resources<i class="fa-solid fa-angle-down"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="py-4">
+              <ul class="flex gap-4 items-center">
+                <li class="text-gray font-inter text-[16px]">Login</li>
+                <li
+                  class="btn bg-violet text-white py-2 px-4 rounded-3xl font-semibold"
+                >
+                  Sign up free
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+   
+      <section class="mt-[7rem]">
+        <div class="flex justify-between item-end">
+  
+          <div class="w-1/2 flex flex-col gap-3">
+            <p class="text-lightGray text-[8px] tracking-widest font-semibold">
+              DIGITAL PRODUCTS
+            </p>
+            <h2 class="text-[48px] text-black font-eb leading-none">
+              Sell online courses, coaching sessions, webinars, workshops,
+              ebooks, and anything you can think of on Podia
+            </h2>
+            <p class="text-gray text-[18px] font-inter">
+              Get everything you need in one place that you own. Podia takes
+              care of hosting products, taking payments, and getting products to
+              your customers. And you always control your own work.
+            </p>
+            <button
+              class="btn w-[13rem] bg-violet text-white py-2 px-4 rounded-3xl font-semibold"
+            >
+              Get your free account
+            </button>
+          </div>
+      
+          <div class="w-1/2 rounded-xl flex justify-end">
+            <img
+              src="assets/images/digital_products-hero.png"
+              alt="hero"
+              srcset=""
+              class="rounded-xl w-[90%]"
+            />
+          </div>
+        </div>
+      </section>
+
+ 
+      <section class="mt-[7rem]">
+        <div class="flex justify-center items-center">
+          <span class="w-[85%] text-center flex flex-col gap-3">
+            <h2 class="font-eb text-[34px] leading-10">
+              All you have to do is make the product. Podia takes care of the
+              details for you.
+            </h2>
+            <p class="font-inter text-[18px] text-gray">
+              Podia lets you make your sales page, take payments, and give your
+              customers access all in one place. Host and sell your products
+              without needing to figure out a handful of new tools.
+            </p>
+          </span>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mt-12">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img
+              src="assets/icons/digital_products-icon-cart.svg"
+              alt=""
+              srcset=""
+              class="w-[45px]"
+            />
+            <h4 class="text-[20px] font-semibold font-eb">
+              Checkout and sales are handled for you
+            </h4>
+            <p class="text-[15px] text-gray font-inter">
+              You don’t have to figure out a bunch of tools or website embeds.
+              Just connect a payment provider and your Podia site takes care of
+              payments for you.
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img
+              src="assets/icons/digital_products-icon-login.svg"
+              alt=""
+              srcset=""
+              class="w-[45px]"
+            />
+            <h4 class="text-[20px] font-semibold font-eb">
+              Your customers log in, and your products are there for them
+            </h4>
+            <p class="text-[15px] text-gray font-inter">
+              Your Podia site handles access to products for you. Everything is
+              in one place. When your customers buy a product, they get a log
+              in. After that, they can see all the products they’ve bought from
+              you.
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img
+              src="assets/icons/digital_products-icon-upload.svg"
+              alt=""
+              srcset=""
+              class="w-[45px]"
+            />
+            <h4 class="text-[20px] font-semibold font-eb">
+              Upload your product. Make your sales page. Done.
+            </h4>
+            <p class="text-[15px] text-gray font-inter">
+              You could sell a digital product by this afternoon. Podia handles
+              hosting, sales pages, checkout, and delivery. All you need is
+              something to sell.
+            </p>
+          </div>
+        </div>
+      </section>
+
+ 
+      <section class="mt-[5rem]">
+        <div class="flex justify-center items-center">
+          <span class="w-[85%] text-center flex flex-col gap-3">
+            <h2 class="font-eb text-[34px] leading-10">
+              What kinds of products can you sell with Podia?
+            </h2>
+            <p class="font-inter text-[18px] text-gray">
+              Podia gives you the flexibility to sell whatever you want. That
+              means you have more ways to grow your creator business.
+            </p>
+          </span>
+        </div>
+        <div class="flex justify-between items-center mt-[5rem]">
+        
+          <div class="w-1/2 flex flex-col gap-4">
+            <p class="text-lightGray text-[8px] tracking-widest font-semibold">
+              ONLINE COURSES
+            </p>
+            <h2 class="text-[30px] text-black font-eb leading-none">
+              Beautiful online courses you can build in moments
+            </h2>
+            <p class="text-gray text-[16px] font-inter leading-7">
+              Make a beautiful online course for your customers. Podia hosts
+              your course. That means all the lessons, files, and videos you
+              want handled for you.
+            </p>
+            <p class="text-[18px] text-violet font-bold">
+              Learn more about courses
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </p>
+          </div>
+    
+          <div class="w-1/2 rounded-xl flex justify-end">
+            <img
+              src="assets/images/digital_products-courses.png"
+              alt="hero"
+              srcset=""
+              class="rounded-xl w-[90%]"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-[6rem]">
+          <span
+            class="w-[85%] text-center flex flex-col justify-center items-center p-3 gap-4"
+          >
+            <div>
+              <img src="assets/icons/Stars__1_.png" class="w-[12rem]" />
+            </div>
+            <p class="text-[22px] font-eb">
+              I’ve wanted to offer e-courses for a while but always felt
+              overwhelmed with how to set it up. Podia has made it super easy.
+            </p>
+            <p class="text-gray">— Joy Cho, Oh Joy! Academy</p>
+          </span>
+        </div>
+      </section>
+
+      <section class="mt-[5rem]">
+        <div class="flex justify-between items-center mt-[5rem]">
+      
+          <div class="w-1/2 flex flex-col gap-4">
+            <p class="text-lightGray text-[8px] tracking-widest font-semibold">
+              DIGITAL DOWNLOADS
+            </p>
+            <h2 class="text-[30px] text-black font-eb leading-none">
+              Ebooks, templates, and any file type you can think of
+            </h2>
+            <p class="text-gray text-[16px] font-inter leading-7">
+              Have an ebook to sell? Templates you love? Podia makes it easy to
+              spin up a sales page and sell ebooks, templates, audio files,
+              video files, spreadsheets, and any other file type.
+            </p>
+            <p class="text-[18px] text-violet font-bold">
+              Learn more about downloads
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </p>
+          </div>
+      
+          <div class="w-1/2 rounded-xl flex justify-end">
+            <img
+              src="assets/images/digital_products-downloads.png"
+              alt="hero"
+              srcset=""
+              class="rounded-xl w-[90%]"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-[6rem]">
+          <span
+            class="w-[85%] text-center flex flex-col justify-center items-center p-3 gap-4"
+          >
+            <div>
+              <img src="assets/icons/Stars__1_.png" class="w-[12rem]" />
+            </div>
+            <p class="text-[22px] font-eb">
+              We didn’t have to stress about technical details or custom coding.
+              Using Podia made selling our first eBook quick, efficient, and
+              fun.
+            </p>
+            <p class="text-gray">— Matt & Steph, Plant-based food bloggers</p>
+          </span>
+        </div>
+      </section>
+
+      <section class="mt-[5rem]">
+        <div class="flex justify-between items-center mt-[5rem]">
+     
+          <div class="w-1/2 flex flex-col gap-4">
+            <p class="text-lightGray text-[8px] tracking-widest font-semibold">
+              COACHING
+            </p>
+            <h2 class="text-[30px] text-black font-eb leading-none">
+              One-on-one coaching and consultations, with billing managed for
+              you
+            </h2>
+            <p class="text-gray text-[16px] font-inter leading-7">
+              Sometimes your students want one-on-one attention. Podia makes it
+              easy for you to charge for coaching sessions and consultations.
+            </p>
+            <p class="text-[18px] text-violet font-bold">
+              Learn more about coaching
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </p>
+          </div>
+       
+          <div class="w-1/2 rounded-xl flex justify-end">
+            <img
+              src="assets/images/digital_products-coaching.png"
+              alt="hero"
+              srcset=""
+              class="rounded-xl w-[90%]"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-[6rem]">
+          <span
+            class="w-[85%] text-center flex flex-col justify-center items-center p-3 gap-4"
+          >
+            <div>
+              <img src="assets/icons/Stars__1_.png" class="w-[12rem]" />
+            </div>
+            <p class="text-[22px] font-eb">
+              Podia just works. It’s easy to use and includes everything you
+              need to sell digital products. I’ve tried all the alternatives,
+              and Podia is hard to beat.
+            </p>
+            <p class="text-gray">— Shawn Leamon, Divorce and Your Money</p>
+          </span>
+        </div>
+      </section>
+
+      <section class="mt-[5rem]">
+        <div class="flex justify-between items-center mt-[5rem] pb-[3rem]">
+      
+          <div class="w-1/2 flex flex-col gap-4">
+            <p class="text-lightGray text-[8px] tracking-widest font-semibold">
+              WEBINARS
+            </p>
+            <h2 class="text-[30px] text-black font-eb leading-none">
+              Webinars and workshops with registration and payment in one place
+            </h2>
+            <p class="text-gray text-[16px] font-inter leading-7">
+              How can you charge for your webinars and workshops? Do it from
+              your Podia site. Set up a paid webinar product and your customers
+              can register straight from your website.
+            </p>
+            <p class="text-[18px] text-violet font-bold">
+              Learn more about webinars
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </p>
+          </div>
+      
+          <div class="w-1/2 rounded-xl flex justify-end">
+            <img
+              src="assets/images/digital_products-webinars.png"
+              alt="hero"
+              srcset=""
+              class="rounded-xl w-[90%]"
+            />
+          </div>
+        </div>
+      </section>
+
+  
+      <section class="bg-darkViolet w-full rounded-xl p-[2rem] text-center">
+        <div class="p-2 text-white flex flex-col gap-3 justify-center">
+          <h2 class="text-[2rem] font-eb font-bold">
+            Get your free Podia account
+          </h2>
+          <p class="text-[18px] font-inter">
+            Join the 150,000+ creators who use Podia to create websites, sell
+            digital products, and build online communities.
+          </p>
+        </div>
+        <button
+          class="bg-purple text-white py-2 px-4 rounded-3xl font-semibold"
+        >
+          Sign up free
+        </button>
+      </section>
+
+      <footer class="mt-[100px] w-full absolute left-0 bg-footerGray">
+        <div
+          class="max-w-[70rem] px-[2rem] py-[6rem] m-auto flex flex-col gap-4"
+        >
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Platform</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Pricing
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Sign up free
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Community
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Website builder
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Digital products
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Email marketing
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Support</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Contact us
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Help center
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Hire a Podia pro
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Creator community
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Podia 101
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Features</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Online courses
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Downloads
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Webinars
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Coaching
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              All features
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Compare</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Kajabi
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Teachable
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Thinkific
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Patreon
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Gumroad
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Podia alternatives
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Resources</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Examples
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Demo
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Creator stories
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Blog
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Free tools
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              All resources
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Podia</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Jobs
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              About
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Branding
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Reviews
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Refer creator
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Affiliates
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li class="font-bold text-[18px]">Social</li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Twitter
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Facebook
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              Instagram
+            </li>
+            <li
+              class="underline underline-offset-4 text-[18px] text-gray cursor-pointer hover:text-violet"
+            >
+              YouTube
+            </li>
+          </ul>
+          <p class="mt-[3rem] pb-[2rem] text-gray">
+            Podia Labs, Inc. © 2023 Terms Privacy
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="z-[99] fixed bottom-5 right-5">
+      <button
+        class="bg-violet text-white p-3 rounded-full font-semibold flex questionMark"
+      >
+        <span class="text-sm mr-2 help">Help</span>
+        <span class="border border-white rounded-full w-[25px] h-[25px]">
+          <i class="fa-solid fa-question"></i>
+        </span>
+      </button>
+    </div>
+  </body>
+</html>
